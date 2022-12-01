@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fabric_Framework" Version="1.0.1" />
+    <PackageReference Include="Fabric_Framework" Version="1.0.2" />
   </ItemGroup>
 
 
