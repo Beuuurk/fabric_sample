@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<extension xmlns="http://bytesbox.net/fabric">
+	<module author="François Rivière" description="First module class" class="Fabric_Sample.FirstModule" name="First_Module" onloaded="true" uid="fabric_sample_firstmodule">
+		<!--Dock pane creation-->
+		<ribbon name="Add_DocumentPane" control="Fabric_Sample.Samples.DockPaneCreation.CreateDocumentPaneButton" tab="ShowCase" group="DockPane creation" />
+		<ribbon name="Add_ToolPane" control="Fabric_Sample.Samples.DockPaneCreation.CreateToolPaneButton" tab="ShowCase" group="DockPane creation" />
+		<ribbon name="Add_InfoPane" control="Fabric_Sample.Samples.DockPaneCreation.CreateInfoPaneButton" tab="ShowCase" group="DockPane creation" />
+		<ribbon name="Add_ContentPane" control="Fabric_Sample.Samples.DockPaneCreation.CreateContentPaneButton" tab="ShowCase" group="DockPane creation" />
+		<!--Dock pane management-->
+		<ribbon name="Show_ContentPane" control="Fabric_Sample.Samples.DockPaneManagement.ShowContentPaneButton" tab="ShowCase" group="DockPanes Show" />
+		<ribbon name="Show_DocumentPane" control="Fabric_Sample.Samples.DockPaneManagement.ShowDocumentPaneButton" tab="ShowCase" group="DockPanes Show" />
+		<ribbon name="Show_InfoPane" control="Fabric_Sample.Samples.DockPaneManagement.ShowInfoPaneButton" tab="ShowCase" group="DockPanes Show" />
+		<ribbon name="Show_ToolPane" control="Fabric_Sample.Samples.DockPaneManagement.ShowToolPaneButton" tab="ShowCase" group="DockPanes Show" />
+		<ribbon name="DockPaneInfo" control="Fabric_Sample.Samples.DockPaneManagement.GetDockPaneInfoButton" tab="ShowCase" group="DockPane Info" />
+		<!--Theming-->
+		<ribbon name="Show_DarkTheme" control="Fabric_Sample.Samples.Theming.ShowDarkThemeButton" tab="ShowCase" group="Theming" />
+		<ribbon name="Show_LightTheme" control="Fabric_Sample.Samples.Theming.ShowLightThemeButton" tab="ShowCase" group="Theming" />
+
+	</module>
+
+
+
+
+</extension>

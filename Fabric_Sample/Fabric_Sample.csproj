@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <StartupObject>Fabric_Sample.Startup.StartupXML</StartupObject>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="C:\Users\franc\.nuget\packages\fabric_framework\1.0.1\contentFiles\any\any\extension.xml" />
+    <EmbeddedResource Remove="C:\Users\franc\.nuget\packages\fabric_framework\1.0.1\contentFiles\any\any\Sample_Extension.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Sample_Extension.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Sample_Extension.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fabric_Framework" Version="1.0.1" />
+  </ItemGroup>
+
+
+</Project>
