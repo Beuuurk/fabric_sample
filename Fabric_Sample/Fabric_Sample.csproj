@@ -13,6 +13,7 @@
     <EmbeddedResource Remove="C:\Users\franc\.nuget\packages\fabric_framework\1.0.1\contentFiles\any\any\extension.xml" />
     <EmbeddedResource Remove="C:\Users\franc\.nuget\packages\fabric_framework\1.0.1\contentFiles\any\any\Sample_Extension.xml" />
     <EmbeddedResource Remove="C:\Users\franc\.nuget\packages\fabric_framework\1.0.2\contentFiles\any\any\extension.xml" />
+    <EmbeddedResource Remove="C:\Users\franc\.nuget\packages\fabric_framework\1.0.3\contentFiles\any\any\extension.xml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Fabric_Framework" Version="1.0.2" />
+    <PackageReference Include="Fabric_Framework" Version="1.0.3" />
   </ItemGroup>
 
 

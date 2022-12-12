@@ -15,10 +15,15 @@
 		<!--Theming-->
 		<ribbon name="Show_DarkTheme" control="Fabric_Sample.Samples.Theming.ShowDarkThemeButton" tab="ShowCase" group="Theming" />
 		<ribbon name="Show_LightTheme" control="Fabric_Sample.Samples.Theming.ShowLightThemeButton" tab="ShowCase" group="Theming" />
-
+		<!--Active the ribbon menu.-->
+		<ribbonmenu name="MainMenu" title="File" >
+			<backstage name="File_Backstage" title="Files management" context="Fabric_Sample.UI.ViewModels.FileManagementVM" control="Fabric_Sample.UI.Views.FileManagement" />
+		</ribbonmenu>
+		<!--Default dockpane creation.-->
+		<contentPane name="ContentPaneSample" title="Content By XML" context="Fabric_Sample.UI.ViewModels.NotepadVM" control="Fabric_Sample.UI.Views.Notepad" />
+		<documentPane name="DocumentPaneSample" title="Document By XML" context="Fabric_Sample.UI.ViewModels.NotepadVM" control="Fabric_Sample.UI.Views.Notepad" />
+		<toolPane name="ToolPaneSample" title="Tool By XML" context="Fabric_Sample.UI.ViewModels.NotepadVM" control="Fabric_Sample.UI.Views.Notepad" />
+		<infoPane name="InfoPaneSample" title="Info By XML" context="Fabric_Sample.UI.ViewModels.NotepadVM" control="Fabric_Sample.UI.Views.Notepad" />
+		
 	</module>
-
-
-
-
 </extension>

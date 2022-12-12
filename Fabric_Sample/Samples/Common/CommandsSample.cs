@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Interop;
 
 namespace Fabric_Sample.Samples.Common
 {
@@ -27,7 +28,7 @@ namespace Fabric_Sample.Samples.Common
          */
         private void ShowHello()
         {
-            MessageBox.Show("Hello !!");
+            MessageBox.Show("Hello world !!");
         }
 
         /*
@@ -55,7 +56,17 @@ namespace Fabric_Sample.Samples.Common
         /*
          * Adds a command to the command handler without populating a definition class. The definition of this
          * order will be added automatically during registration.
-         * This recording is the shortest.
+         */
+        public void AddWithoutDefinition2()
+        {
+            Commands.Instance.Add("Say_Hello2", () => { MessageBox.Show("Hello world !!"); }, "Say hello in message box", true);
+        }
+
+        /*
+         * Adds a command to the command handler without populating a definition class. The definition of this
+         * order will be added automatically during registration.
+         * This recording is the shortest. 
+         * See 'ExecuteCommandWithArg' to see the arguments usage.
          */
         public void AddWithoutDefinitionShortest()
         {

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Fabric_Sample.UI.Views
 {
     /// <summary>
-    /// Logique d'interaction pour Showcase.xaml
+    /// Logique d'interaction pour FileManagement.xaml
     /// </summary>
-    public partial class Showcase : UserControl
+    public partial class FileManagement : UserControl
     {
-        public Showcase()
+        public FileManagement()
         {
             InitializeComponent();
         }
